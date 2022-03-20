@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css" />
+
+  <title>Ukázka formuláře</title>
+</head>
+
+<body>
+  <form>
+    <legend>Přihláška na kurz</legend>
+    <div class="field">
+      <label for="firsName">Jméno:</label>
+      <input id="firstName" type="text" />
+    </div>
+    <div class="field">
+      <label for="lastName">Příjmení:</label>
+      <input id="lastName" type="text" />
+    </div>
+    <div class="field">
+      <label for="lastName">E-mail:</label>
+      <input id="lastName" type="email" />
+    </div>
+    <div class="field">
+      <label>Vaše zkušenosti:</label>
+      <div>
+        <label><input type="radio" name="experience" checked="true" /> Nováček </label>
+        <label><input type="radio" name="experience" /> Začátečník </label>
+        <label><input type="radio" name="experience" /> Pokročilý </label>
+      </div>
+    </div>
+    <div class="field">
+      <label for="reference">Odkud o nás víte:</label>
+      <select id="referece">
+        <option value="facebook">Facebook</option>
+        <option value="instagram">Instagram</option>
+        <option value="friends">Od známých</option>
+        <option value="othen">Jiné...</option>
+      </select>
+    </div>
+    <div class="field field--hidden">
+      <label for="refOther">Uveďte:</label>
+      <input id="refOther" type="text" />
+    </div>
+    <div class="field">
+      <label for="note">Vzkaz pro nás:</label>
+      <textarea id="note" rows="5"></textarea>
+    </div>
+    <div class="check">
+      <label><input type="checkbox" />Chci dostávat informovat o dalších akcích</label>
+    </div>
+    <div class="controls">
+      <button type="submit">Přihlásit</button>
+    </div>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid gray;
+  font-size: 1rem;
+}
+
+select {
+  background-color: white;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  resize: none;
+}
+
+.check {
+  margin: 1rem 2rem;
+}
+
+.check input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.controls {
+  text-align: right;
+}
+
+button {
+  border: none;
+  background-color: #263fba;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c2e87;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.field {
+  display: flex;
+  align-items: baseline;
+  margin: 0.5rem 0;
+}
+
+.field--hidden {
+  display: none;
+}
+
+.stack-field label {
+  display: block;
+}
+
+.field > label {
+  flex: 0 0 8rem;
+  text-align: right;
+  margin-right: 1rem;
+}
+
+.field > label + * {
+  display: block;
+  flex: 1;
+  padding: 0.5rem;
+}
+
+legend {
+  font-size: 2rem; 
+  margin: 0 0 2rem 0;
+}
+
+form {
+  max-width: 35rem;
+  padding: 2rem;
+  margin: 0 auto;
+
+  background-color: #f0f0f0;
+}

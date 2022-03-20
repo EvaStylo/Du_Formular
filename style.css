@@ -8,10 +8,45 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  max-width: 35rem;
+  margin: 0 auto;
+}
+
+form {
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+legend {
+  font-size: 2rem; 
+  margin: 0 0 2rem 0;
+}
+
+label, input, button {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+button {
+  border: 1px solid #263fba;
+  padding: 0.5rem 1rem;
+  background-color: #263fba;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1c2e87;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
 input:not([type="radio"]):not([type="checkbox"]),
 select,
 textarea {
-  padding: 0.5rem;
   border: 1px solid gray;
   font-size: 1rem;
 }
@@ -35,23 +70,6 @@ textarea {
 
 .controls {
   text-align: right;
-}
-
-button {
-  border: none;
-  background-color: #263fba;
-  color: white;
-  padding: 1rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #1c2e87;
-}
-
-button:active {
-  transform: scale(0.9);
 }
 
 .field {
@@ -78,17 +96,4 @@ button:active {
   display: block;
   flex: 1;
   padding: 0.5rem;
-}
-
-legend {
-  font-size: 2rem; 
-  margin: 0 0 2rem 0;
-}
-
-form {
-  max-width: 35rem;
-  padding: 2rem;
-  margin: 0 auto;
-
-  background-color: #f0f0f0;
 }

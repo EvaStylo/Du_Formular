@@ -50,6 +50,12 @@ textarea {
   font-size: 1rem;
 }
 
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"] {
+  accent-color: #263fba;
+}
+
 select {
   background-color: white;
 }

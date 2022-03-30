@@ -14,39 +14,35 @@
   <div class="container">
     <form id="registration">
       <h1>Přihláška na kurz</h1>
+      <label class="field">
+        Jméno: <input type="text" />
+      </label>
+      <label class="field">
+        Příjmení: <input type="text" />
+      </label>
+      <label class="field">
+        E-mail: <input type="email" />
+      </label>
       <div class="field">
-        <label for="firstName">Jméno:</label>
-        <input id="firstName" type="text" />
-      </div>
-      <div class="field">
-        <label for="lastName">Příjmení:</label>
-        <input id="lastName" type="text" />
-      </div>
-      <div class="field">
-        <label for="email">E-mail:</label>
-        <input id="email" type="email" />
-      </div>
-      <div class="field">
-        <label>Vaše zkušenosti:</label>
-        <div>
+        Vaše zkušenosti:
+        <div class="options">
           <label><input type="radio" name="experience" checked="true" /> Nováček </label>
           <label><input type="radio" name="experience" /> Začátečník </label>
           <label><input type="radio" name="experience" /> Pokročilý </label>
         </div>
       </div>
-      <div class="field">
-        <label for="reference">Odkud o nás víte:</label>
-        <select id="reference">
+      <label class="field">
+        Odkud o nás víte:
+        <select>
           <option value="facebook">Facebook</option>
           <option value="instagram">Instagram</option>
           <option value="friends">Od známých</option>
           <option value="other">Jiné…</option>
         </select>
-      </div>
-      <div class="field">
-        <label for="note">Vzkaz pro nás:</label>
-        <textarea id="note" rows="5"></textarea>
-      </div>
+      </label>
+      <label class="field">
+        Vzkaz pro nás: <textarea rows="5"></textarea>
+      </label>
       <div class="check">
         <label><input type="checkbox" />Chci dostávat informovat o dalších akcích</label>
       </div>

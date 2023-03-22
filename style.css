@@ -22,6 +22,10 @@ h1 {
   font-weight: normal;
 }
 
+h2 {
+  color: red;
+}
+
 label,
 input,
 button,
